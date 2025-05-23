@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="newstyle.css">
   <title>Frontend Mentor | Tech book club</title>
 </head>
 <body>
@@ -23,7 +23,7 @@
             skills one chapter at a time.</p>
             <button class="btn button-primary"> Review membership options <img src="assets/images/icon-arrow-down.svg" alt=""></button>
               <div class="avater-reviews">
-                <img src="assets/images/image-avatars.webp" alt="">
+                <img src="assets/images/image-avatars.webp" alt="" class="avater">
                 <figure class="reviews">
                   <div>
                     <img src="assets/images/icon-star.svg" alt="star-icon">
@@ -45,14 +45,16 @@
       </div>
     </header>
 
-    <section>
-        <div>
-          <picture>
-            <source media="(min-width: 375px)" srcset="assets/images/image-read-together-mobile.webp">
-            <source media="(min-width: 686px)" srcset="assets/images/image-read-together-mobile.webp">
-            <img src="assets/images/image-read-together-mobile.webp" alt="read-together" class="read-together">
-          </picture>
-          <div>
+    <section class="read-average">
+        <div class="boxes box-1">
+          <div class="image-pattern">
+            <picture class="photos">
+              <source media="(min-width: 375px)" srcset="assets/images/image-read-together-mobile.webp">
+              <source media="(min-width: 686px)" srcset="assets/images/image-read-together-mobile.webp">
+              <img src="assets/images/image-read-together-mobile.webp" alt="read-together" class="image">
+            </picture>
+          </div>
+          <div class="boxes-text">
             <h2>Read together, grow together</h2>
             <ul>
               <li>Monthly curated tech reads selected by industry experts.</li>
@@ -65,19 +67,21 @@
     </section>
 
 
-    <section>
-      <div>
-        <div>
+    <section class="read-average">
+      <div class="boxes ">
+        <div class="boxes-text">
           <h1>Not your average book club</h1>
           <p> Connect with a community that speaks your language - from Python to TypeScript and 
               everything in between. Our discussions blend technical depth with practical applications.
           </p>
         </div>
-        <picture>
-          <source media="(min-width: 320px)" srcset="assets/images/image-not-average-mobile.webp">
-          <source media="(min-width: 686px)" srcset="assets/images/image-not-average-mobile.webp">
-          <img src="assets/images/image-not-average-desktop.webp" alt="not-average" class="not-average">
-        </picture>
+        <div class="image-pattern">
+          <picture class="photos">
+            <source media="(min-width: 320px)" srcset="assets/images/image-not-average-mobile.webp">
+            <source media="(min-width: 686px)" srcset="assets/images/image-not-average-mobile.webp">
+            <img src="assets/images/image-not-average-desktop.webp" alt="not-average" class="image">
+          </picture>
+        </div>
       </div>
     </section>
         

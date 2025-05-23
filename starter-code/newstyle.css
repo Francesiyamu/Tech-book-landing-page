@@ -18,23 +18,20 @@ body{
     background-color: #f0f0f0;
 }
 
+/*------mobile design-----*/
 #container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    width: 100%;
-    max-width: 1440px;
-    min-width: 385px;
+    max-width: 425px;
+    min-width: 320px;
     height: auto; 
 }
 
 /*------header-------*/
 .header{
-    width: 100%;
-    min-width: 375px;
-    height: auto;
     background-image: url(assets/images/pattern-light-bg.svg);
     background-position: center;
     background-repeat: no-repeat;
@@ -43,13 +40,14 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .logo{
     width: 80%;
     height: auto;
     overflow: hidden;
-    padding: 2rem 0;
+    padding: 2rem 0rem;
 }
 
 
@@ -70,29 +68,29 @@ body{
     flex-wrap: wrap;
 }
 
+
 .header-content_text{
-    max-width: 570px;
-    min-width: 373px;
+    max-width: 343px;
+    min-width: 320px;
 }
 
 .header-content_text h1{
-     background: linear-gradient(107deg, #FF9A60 -11.37%, #062630 61.84%);
+    background: linear-gradient(107deg, #FF9A60 -11.37%, #062630 61.84%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
-    font-size: 1.25rem;
-    font-size: clamp(1.25rem, 14.75rem + -11.25vw, 12.5rem);
-    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-size: clamp(2.5rem, 2.875rem + -0.3125vw, 2.8125rem);
+    margin-bottom: 1rem;
 }
 
 .header-content_text p{
     font-size: 1.125rem;
     font-size: clamp(1.125rem, 1.1rem + 0.125vw, 1.25rem);
-    line-height: 2rem;
+    line-height: 1.5rem;
     margin-bottom: 10px;
 }
-
 
 .image-pattern{
     background-image: url(assets/images/pattern-glow.svg);
@@ -103,7 +101,6 @@ body{
 
 .photos{
     overflow: hidden;
-
 }
 
 .photos .image{
@@ -111,14 +108,16 @@ body{
     min-width: 320px;
     height: auto;
     display: block;
+    border-radius: 5px;
 }
+
 
 .btn{
   display: flex;  
   justify-content: center;
   align-items: center;
   gap: 20px;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   background-color: #FFF5EF;
   text-transform: uppercase;
   font-weight: bolder;
@@ -131,23 +130,42 @@ body{
     display: flex;
     gap: 20px;
     align-items: center;
+    width: 343px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.avater{
+    max-width: 50%;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 378px) {
-    
+/*----middle section mobile view------*/
+.read-average{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
+
+.boxes{
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+
+.boxes.box-1 .boxes-text {
+    order: 1; /* Text first */
+}
+
+.boxes.box-1 .image-pattern {
+    order: 2; /* Image second */
+}
+
