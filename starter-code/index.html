@@ -5,16 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Tech book club</title>
 </head>
 <body>
 
   <div id="container">
-    <header>
-      <picture>
+    <header class="header">
+      <figure class="logo">
         <img src="assets/images/logo.svg" alt="tech-book-logo" style="width:auto;">
-      </picture>
+      </figure>
       <div class="header-content">
         <div class="header-content_text">
           <h1> Join the ultimate tech book club</h1>
@@ -22,8 +22,7 @@
             Get curated recommendations, join vibrant discussions, and level up your 
             skills one chapter at a time.</p>
             <button class="btn button-primary"> Review membership options <img src="assets/images/icon-arrow-down.svg" alt=""></button>
-            <figure>
-              <div>
+              <div class="avater-reviews">
                 <img src="assets/images/image-avatars.webp" alt="">
                 <figure class="reviews">
                   <div>
@@ -36,11 +35,11 @@
                 </figure>
               </div>
         </div>
-        <div>
-          <picture>
+        <div class="image-pattern">
+          <picture class="photos">
             <source media="(min-width:375px)" srcset="assets/images/image-hero-mobile.webp">
             <source media="(min-width:686px)" srcset="assets/images/image-hero-mobile.webp">
-            <img src="assets/images/image-hero-desktop.webp" alt="hero-image" class="hero-image">
+            <img src="assets/images/image-hero-desktop.webp" alt="hero-image" class="image">
           </picture>
         </div>
       </div>

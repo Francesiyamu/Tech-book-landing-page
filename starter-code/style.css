@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Martian+Mono:wght@100..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f0f0;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1440px;
+    min-width: 385px;
+    height: auto; 
+}
+
+/*------header-------*/
+.header{
+    width: 100%;
+    min-width: 375px;
+    height: auto;
+    background-image: url(assets/images/pattern-light-bg.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    width: 80%;
+    height: auto;
+    overflow: hidden;
+    padding: 2rem 0;
+}
+
+
+.logo img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.header-content{
+    width: 80%;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.header-content_text{
+    max-width: 570px;
+    min-width: 373px;
+}
+
+.header-content_text h1{
+     background: linear-gradient(107deg, #FF9A60 -11.37%, #062630 61.84%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-size: 1.25rem;
+    font-size: clamp(1.25rem, 14.75rem + -11.25vw, 12.5rem);
+    margin-bottom: 2rem;
+}
+
+.header-content_text p{
+    font-size: 1.125rem;
+    font-size: clamp(1.125rem, 1.1rem + 0.125vw, 1.25rem);
+    line-height: 2rem;
+    margin-bottom: 10px;
+}
+
+
+.image-pattern{
+    background-image: url(assets/images/pattern-glow.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.photos{
+    overflow: hidden;
+
+}
+
+.photos .image{
+    max-width: 100%;
+    min-width: 320px;
+    height: auto;
+    display: block;
+}
+
+.btn{
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 1rem 2rem;
+  background-color: #FFF5EF;
+  text-transform: uppercase;
+  font-weight: bolder;
+  border-radius: 6px;
+  outline: none;
+  margin-bottom: 15px;
+}
+
+.avater-reviews{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
